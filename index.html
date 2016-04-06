@@ -1,18 +1,48 @@
 ---
 layout: bare
 ---
-<main class="hero-unit" style="background-image: url({{ "img/bg-wired-01.jpg" | prepend:site.baseurl }})">
+<main>
+<section class="hero-unit" style="background-image: url({{ "/img/bg-wired-01.jpg" | prepend:site.baseurl }})">
   <div class="container">
-    <img src="{{ "img/matar01.png" | prepend:site.baseurl }}" width="320px" height="450px" alt="" class="toright">
-    <section>
-      <hgroup>
-        <h1>Welcome to the Wired, Matar</h1>
-        <h2>Que tu estancia sea electrizante</h2>
-      </hgroup>
-      <p>Una vez m&aacute;s, <strong>Nintendo Un Pomo</strong> est&aacute; de regreso.</p>
-      <p>Una vez m&aacute;s, decimos que nos quedamos.</p>
-      <p>Trece a&ntilde;os dando vueltas, a veces llegando a alguna parte.</p>
-      <p>Una vez m&aacute;s, veremos.</p>
-    </section>
+    <img src="{{ "/img/matar01.png" | prepend:site.baseurl }}" width="320" height="450" alt="" class="toright">
+    <header>
+      <h1>Welcome to the Wired, Matar</h1>
+      <h2>Que tu estancia sea electrizante</h2>
+    </header>
+    <p>Una vez m&aacute;s, <strong>Nintendo Un Pomo</strong> est&aacute; de regreso.</p>
+    <p>Una vez m&aacute;s, decimos que nos quedamos.</p>
+    <p>Trece a&ntilde;os dando vueltas, a veces llegando a alguna parte.</p>
+    <p>Una vez m&aacute;s, veremos.</p>
   </div>
+</section>
+
+<section class="feature-box">
+  <div class="container">
+    <h1>Nuestro regreso al ciberespacio</h1>
+    <div class="row">
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/smil01md/18.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>No mancha</h2>
+          <p>Tampoco se pega. Siempre y cuando no te toque, eso s&iacute;.</p>
+        </article>
+      </div>
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/smil01md/22.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>No arde</h2>
+          <p>F&oacute;rmula exclusiva. Adi&oacute;s a los ojos llorosos.</p>
+        </article>
+      </div>
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/smil01md/38.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>Rinde m&aacute;s</h2>
+          <p>Hasta ocho porciones. No m&aacute;s peleas en familias numerosas.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
