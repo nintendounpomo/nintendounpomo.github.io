@@ -1,19 +1,30 @@
 ---
 ---
 @import url(paper.css);
-{% if site.production %}@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-{% else %}@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans'), local('OpenSans'), url({{ "/local/opensas-v13.woff" | prepend:site.baseurl }}) format('woff');
-}
+{% if site.production %}@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Montserrat|Poiret+One);{% else %}
 @font-face {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: local('Montserrat-Regular'), url({{ "/local/montserrat-regular-v6.woff" | prepend:site.baseurl }}) format('woff');
+  src: local('Montserrat-Regular'), url(/local/gfonts/zhcz-_WihjSQC0oHJ9TCYBsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(/local/gfonts/DXI1ORHCpsQm3Vp6mXoaTXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(/local/gfonts/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Poiret One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Poiret One'), local('PoiretOne-Regular'), url(/local/gfonts/HrI4ZJpJ3Fh0wa5ofYMK8RsxEYwM7FgeyaSgU71cLG0.woff) format('woff');
 }
 {% endif %}
 
@@ -22,12 +33,12 @@
 }
 
 html, body, table {
- font-family: "Open Sans", Verdana, sans-serif;
+ font-family: 'Open Sans', Verdana, sans-serif;
  font-size: 12pt;
 }
 
-h1,h2,h3 {
- font-family: Montserrat, Arial, sans-serif;
+h1, h2, h3 {
+ font-family: 'Open Sans', Arial, sans-serif;
  font-weight: normal;
  color: #8AB933;
 }
@@ -114,6 +125,11 @@ h1,h2,h3 {
  margin: 4ex 0;
 }
 
+.hero-unit h1, .hero-unit h2, .hero-unit h3 {
+ font-family: Montserrat, Arial, sans-serif;
+ font-weight: normal;
+}
+
 .hero-unit h1 {
  color: #FFF;
  font-size: 45pt;
@@ -145,11 +161,10 @@ h1,h2,h3 {
 .feature-box h1 {
  margin-bottom: 2ex;
  text-align: center;
- letter-spacing: 1pt;
- /*
- color: white;
- text-shadow: 0 0 8pt #000;
- */
+ color: #555;
+ font-family: 'Poiret One', Arial, sans-serif;
+ font-size: 30pt;
+ letter-spacing: 2pt;
 }
 
 .feature-icon {
@@ -159,8 +174,6 @@ h1,h2,h3 {
 }
 
 .feature-item h2 {
- font-family: "Open Sans", sans-serif;
- font-weight: normal;
 }
 
 .feature-item article {
