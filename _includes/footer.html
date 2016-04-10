@@ -13,6 +13,10 @@
   ga('create', 'UA-278280-5', 'auto');
   ga('send', 'pageview');
 </script>
+<script src="https://form.jotformz.com/static/feedback2.js?3.3.REV" type="text/javascript">
+document.getElementById('nup-contact-form').onclick = function() { return false; };
+var JFL_61006851451650 = new JotformFeedback({ formId: '61006851451650', base: 'https://form.jotformz.com/', windowTitle: 'Formulario de contacto', background: '#FFA500', fontColor: '#FFFFFF', type: 'false', height: 500, width: 700, openOnLoad: false });
+</script>
 {% else %}<script type="text/javascript" src="{{ "/local/jquery-1.11.2.min.js" | prepend:site.baseurl }}"></script>
 <script type="text/javascript" src="{{ "/local/bootstrap.min.js" | prepend:site.baseurl }}"></script>
 {% endif %}

@@ -1,14 +1,21 @@
 ---
-layout: default
+layout: bare
 ---
-<div class="post">
+<main class="page">
+  <article>
+    <section class="hero-unit hero-unit-bg">
+      <div class="container">
+        <header>
+          <h1>{{ page.title }}</h1>
+{% if page.subtitle %}<h2>{{ page.subtitle }}</h2>{% endif %}
+        </header>
+      </div>
+    </section>
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <article class="post-content">
-    {{ content }}
+    <section class="post-content">
+      <div class="container">
+      {{ content }}
+      </div>
+    </section>
   </article>
-
-</div>
+</main>
