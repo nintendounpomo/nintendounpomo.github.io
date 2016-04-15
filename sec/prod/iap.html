@@ -1,0 +1,140 @@
+---
+layout: bare
+title: "Internet Anal Perforator"
+header: |
+  <style type="text/css">
+  .hero-unit {
+   background-color: black;
+   background-image: url(/img/sec/prod/iap-hero-bg.jpg); 
+  }
+  </style>
+---
+<main>
+<section class="hero-unit">
+  <div class="container">
+    <header>
+      <img src="{{ "/img/sec/prod/iap-monitor-400x302.png" | prepend:site.baseurl }}" width="400" height="302" alt="" class="toright">
+      <h1>Internet Anal Perforator<h1>
+      <h2>Manejo reactivo de amenazas de red</h2>
+    </header>
+    <p>&iquest;Cansado de que le roben la contrase&ntilde;a del Facebook?</p>
+    <p>&iquest;Harto de que los usuarios colapsen la subred con idioteces?</p>
+    <p>&iquest;Podrido de las burlas en IRC?</p>
+    <p>I.A.P. es la soluci&oacute;n.</p>
+  </div>
+</section>
+
+<section class="feature-box">
+  <div class="container">
+    <h1>Porque a veces defenderse no es suficiente</h1>
+    <div class="row">
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/sec/prod/iap-terminal-128x128.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>Interfaz de texto</h2>
+          <p>Para que use todos sus dedos.</p>
+        </article>
+      </div>
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/sec/prod/iap-multi-128x128.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>Multiplataforma</h2>
+          <p>Para todos los gustos.</p>
+        </article>
+      </div>
+      <div class="feature-item col-md-4">
+        <article>
+          <img class="feature-icon" src="{{ "/img/sec/prod/iap-love-128x128.png" | prepend:site.baseurl }}" width="128" height="128" alt="">
+          <h2>Con amor</h2>
+          <p>Configurable por el usuario.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="details">
+  <div class="container">
+
+<h2>Introducci&oacute;n</h2>
+<p>I.A.P. es un utilitario para conducir ataques de perforaci&oacute;n en redes IP. Es utilizado por todo tipo de usuarios, desde administradores de sistemas hasta ne&oacute;fitos, para tareas de prevenci&oacute;n de ataques y represalias dirigidas. A diferencia de otros sistemas similares, los ataques no van dirigidos al host objetivo, sino contra el usuario mismo (<em>la v&iacute;ctima</em>).</p>
+
+<h2 id="caractersticas">Caracter&iacute;sticas</h2>
+
+<div class="row">
+<div class="col-md-8">
+<p>I.A.P. utiliza una variedad de t&eacute;cnicas, desde la creaci&oacute;n directa de paquetes IP hasta el aprovechamiento de caracter&iacute;sticas de protocolos espec&iacute;ficos en capas superiores. Su arquitectura de plugins le permite soportar nuevos protocolos de manera r&aacute;pida y sencilla, con lo cual es posible definir esquemas de ataque para virtualmente cualquier tipo de objetivo.</p>
+
+<ul>
+  <li>
+    <p>Funciona en Windows, Linux y OS/X (y pr&oacute;ximamente Android).</p>
+  </li>
+  <li>
+    <p>Interfaz de linea de comandos sencilla y flexible.</p>
+  </li>
+  <li>
+    <p>Varios tipos de ataque: r&aacute;pidos, duros, con vueltas y combinados.</p>
+  </li>
+  <li>
+    <p>Posibilidad de graduar variables que configuran el ataque.</p>
+  </li>
+  <li>
+    <p>Posibilidad de definir tipos de ataque a medida.</p>
+  </li>
+</ul>
+</div><!-- .col -->
+
+<aside class="col-md-4">
+  <blockquote>
+    <img src="{{ "/img/sec/prod/iap-admin-200x113.jpg" | prepend:site.baseurl }}" width="200" height="113" alt="" class="totop">
+    <p>La primera vez que ejecut&eacute; <em>IAP</em> pens&eacute; que no funcionaba.</p>
+    <p>Luego se me ocurri&oacute; probarlo en la 127.0.0.1 y desde entonces mi vida dio un giro de 180 grados.</p>
+    <p class="autor">Gaylor M. Dick, Virginia, E.E.U.U.</p>
+  </blockquote>
+</aside>
+</div><!-- .row -->
+
+
+<h2 id="modo-de-uso">Modo de uso</h2>
+
+<p>Luego de descargar e instalar el paquete, puede ejecutar el utilitario de la siguiente manera:</p>
+
+<pre><code># iap [opciones] &lt;ip&gt;[:&lt;puerto&gt;] &lt;objetivo&gt;
+</code></pre>
+
+<p>Donde <strong>ip</strong> es la direcci&oacute;n ip del objetivo y <strong>objetivo</strong> es el nombre del usuario que recibir&aacute; el ataque. Opcionalmente se puede especificar el puerto por donde se introducir&aacute; la sonda de ataque. Si no se especifica, se utilizar&aacute; el puerto 79 TCP.</p>
+
+<p>Por ejemplo:</p>
+
+<pre><code># iap 192.168.0.100 "Chapu"
+</code></pre>
+
+<p>Conducir&aacute; un ataque contra el usuario <em>Chapu</em> conectado en el host con IP 192.168.0.100 dentro de la LAN.</p>
+
+<p>En caso de que el host objetivo est&eacute; detr&aacute;s de un router NAT, se deber&aacute; especificar el n&uacute;mero de puerto de alguna aplicaci&oacute;n que est&eacute; ejecutando el usuario para introducirse a trav&eacute;s de ella.</p>
+
+<h2 id="opciones">Opciones</h2>
+
+<pre><code>-s &lt;speed&gt;
+  Velocidad del env&iacute;o de paquetes. 0 es la m&aacute;xima posible, 256 la m&aacute;s despacio. [Por defecto 128]
+
+-l &lt;love&gt;
+  Nivel de amor. 0 sin amor, 128 con todo el amor, -127 para sadismo. [Por defecto 0]
+
+-h &lt;hard&gt;
+  Nivel de dureza del ataque. De 0 a 10, 0 es el m&iacute;nimo, 10 es el m&aacute;ximo. [Por defecto 0]
+
+-t &lt;twist&gt;
+  Velocidad de giro de la sonda a medida que penetra en el objetivo. De 0 a 128. [Por defecto 0]
+
+-m &lt;msg&gt;
+  Mensaje para mostrar a la v&iacute;ctima luego de una penetraci&oacute;n exitosa. [Por defecto "Your anus has been perforated"]
+</code></pre>
+
+<h2>Comprar</h2>
+<p>Puede adquirir licencias de uso contactando con nuestro departamento de ventas de 16:58 a 17:00 hs. todos los d&iacute;as martes que no llueva o haya mucho sol (si el d&iacute;a est&aacute; nublado existe la posibilidad de que tampoco vaya nadie a la oficina).</p>
+<p>Si se contacta v&iacute;a telef&oacute;nica pregunte por Tacha.</p>
+  </div>
+</section>
+</main>

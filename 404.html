@@ -1,0 +1,16 @@
+---
+layout: bare
+title: "P&aacute;gina no encontrada"
+---
+<main>
+  <section class="hero-unit hero-unit-bg">
+    <div class="container">
+      <header>
+        <img src="{% if site.production %}http://lh4.googleusercontent.com/-sthoYe4t75k/UAGhQLaS1QI/AAAAAAAAArk/gvCBZrFcs8E/s800/coneandres.png{% else %}{{ "/local/coneandres.png" | prepend:site.baseurl }}{% endif %}" width="205" height="312" alt="" class="toright">
+        <h1>{{page.title}}</h1>
+        <h2>La p&aacute;gina que desea ver no est&aacute; disponible. Vuelva a intentarlo dentro de algunos d&iacute;as, por ah&iacute; aparece.</h2>
+      </header>
+      <p><a href="{% if site.production %}{{ site.baseurl | prepend:site.url }}{% else %}{{ site.baseurl | append:"/" }}{% endif %}" class="btn btn-primary btn-lg">Ir a la p&aacute;gina principal</a></p>
+    </div>
+  </section>
+</main>

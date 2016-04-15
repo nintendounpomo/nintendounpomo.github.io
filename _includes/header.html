@@ -10,13 +10,12 @@
           <span class="icon-bar"></span>
         </button>
         <div class="navbar-brand">
-          <a href="{{ site.baseurl | prepend:site.url }}" title="{{ site.title }}"><span>{{ site.title }}</span></a>
+          <a href="{% if site.production %}{{ site.baseurl | prepend:site.url }}{% else %}{{ site.baseurl | append:"/" }}{% endif %}" title="{{ site.title }}"><span>{{ site.title }}</span></a>
         </div>
       </div>
       <div id="navbar-collapse" class="collapse navbar-collapse navbar-right">
         <ul class="nav navbar-nav">
-        {% for page in site.pages %}{% if page.title %}<li role="presentation"><a role="button" href="{{ page.url | prepend:site.baseurl }}">{{ page.title }}</a></li>{% endif %}{% endfor %}
-        <li role="presentation"><a role="button" id="nup-contact-form" href="https://form.jotformz.com/61006851451650" class="lightbox-61006851451650">Contacto</a></li>
+          <li role="presentation"><a role="button" id="nup-contact-form" href="https://form.jotformz.com/61006851451650" class="lightbox-61006851451650">Contacto</a></li>
         </ul>
       </div>
 
