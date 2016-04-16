@@ -63,9 +63,10 @@ aside blockquote {
  font-size: 11pt;
 }
 
-img.totop {
- margin: 0 0 1ex;
+img.toleft {
+ margin: 0 1em 2ex 0;
  border-radius: 8px;
+ float: left;
 }
 
 .navbar {
@@ -116,6 +117,11 @@ img.totop {
  letter-spacing: 2pt;
 }
 
+.toright {
+ float: right;
+}
+
+
 /* Hero unit */
 .hero-unit {
  background-color: #22D;
@@ -124,7 +130,7 @@ img.totop {
  background-position: center;
  color: #FFF;
  text-shadow: 0 0 4pt #000;
- padding-top: 4ex;
+ padding-top: 8ex;
  padding-bottom: 4ex;
 }
 
@@ -141,34 +147,28 @@ img.totop {
  border-radius: 40px;
 }
 
-.toright {
+.hero-unit-img {
  float: right;
-}
-
-.hero-unit .toright {
  margin: 10px 0 10px 10px;
 }
 
-.hero-unit header {
- margin: 4ex 0;
-}
-
-.hero-unit h1, .hero-unit h2, .hero-unit h3 {
+.hero-unit h1, .hero-unit-subtitle {
  font-family: Montserrat, Arial, sans-serif;
  font-weight: normal;
+ color: #FFF;
 }
 
 .hero-unit h1 {
- color: #FFF;
  font-size: 45pt;
  letter-spacing: -1pt;
  line-height: 1;
- margin-bottom: 0;
+ margin-top: 0;
+ margin-bottom: 12pt;
 }
 
-.hero-unit h2 {
- color: #FFF;
+.hero-unit-subtitle {
  font-size: 19pt;
+ margin-bottom: 2.25ex;
 }
 
 .hero-unit p {
@@ -204,9 +204,9 @@ img.totop {
 .feature-item h2 {
 }
 
-.feature-item article {
+.feature-item-body {
  background: white;
- border-radius: 5%;
+ border-radius: 1ex;
  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
  margin-top: 1ex;
  margin-bottom: 1ex;
@@ -218,32 +218,44 @@ img.totop {
 /******************************************************************************
   Detalles
  ******************************************************************************/
-.details {
+.post {
+ margin-top: 2.5ex;
  margin-bottom: 4ex;
 }
 
-.post {
+.post-body {
  max-width: 42em;
 }
 
-.post h1, .post h2, .post h3 {
+.post-body h1, .post-body h2, .post-body h3 {
  margin-top: 2ex;
  color: #338AB9;
  font-weight: 300;
 }
 
-.post h1 {
+.post-body h1 {
  margin-top: 2.5ex;
 }
 
-.post p {
+.post .first {
+ margin-top: 0;
+}
+
+.post-body p {
  margin-bottom: 2ex;
 }
 
-.post ul {
+.post-body ul {
  list-style: url({% if site.production %}http://www.websitebullets.com/bullet/859/3.gif{% else %}/local/bullet/859/3.gif{% endif %});
 }
 
-.post ul p {
+.post-body ul p {
  margin-bottom: 1.5ex;
+}
 
+.post-sidebar {
+}
+
+.post-sidebar h1 {
+ font-size: 16pt;
+}
