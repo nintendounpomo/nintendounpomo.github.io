@@ -186,26 +186,13 @@ img.totop {
  background-color: #F8F8F8;
 }
 
-.feature-box h1,
-.details h1 {
+.feature-box h1 {
  margin-bottom: 2ex;
  text-align: center;
  color: #555;
  font-family: 'Poiret One', Arial, sans-serif;
  font-size: 30pt;
  letter-spacing: 2pt;
-}
-
-.details {
- margin-bottom: 4ex;
-}
-
-.details h1 {
- margin-top: 4ex;
-}
-
-.details h2 {
- margin-top: 2ex;
 }
 
 .feature-icon {
@@ -225,4 +212,38 @@ img.totop {
  margin-bottom: 1ex;
  padding: 2ex;
 }
+
+
+
+/******************************************************************************
+  Detalles
+ ******************************************************************************/
+.details {
+ margin-bottom: 4ex;
+}
+
+.post {
+ max-width: 42em;
+}
+
+.post h1, .post h2, .post h3 {
+ margin-top: 2ex;
+ color: #338AB9;
+ font-weight: 300;
+}
+
+.post h1 {
+ margin-top: 2.5ex;
+}
+
+.post p {
+ margin-bottom: 2ex;
+}
+
+.post ul {
+ list-style: url({% if site.production %}http://www.websitebullets.com/bullet/859/3.gif{% else %}/local/bullet/859/3.gif{% endif %});
+}
+
+.post ul p {
+ margin-bottom: 1.5ex;
 
