@@ -20,11 +20,11 @@
 {% endif %}
 {% endcapture %}
 {% if prev_post or next_post %}
-  <div class="paginator">
-    <div class="container">
+  <div class="paginator">{% if add_container %}
+    <div class="container">{% endif %}
     {% if prev_post %}<a class="btn btn-primary" href="{{ prev_post.url }}" title="{{ prev_post.title }}">Anterior</a>{% else %}<span class="btn btn-default disabled" title="{{ prev_post.title }}">Anterior</span>{% endif %}
     &nbsp;
     {% if next_post %}<a class="btn btn-primary" href="{{ next_post.url }}" title="{{ next_post.title }}">Siguiente</a>{% else %}<span class="btn btn-default disabled" title="{{ next_post.title }}">Siguiente</span>{% endif %}
-    </div>
-  </div>
+    </div>{% if add_container %}
+  </div>{% endif %}
 {% endif %}
