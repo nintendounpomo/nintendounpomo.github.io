@@ -1,0 +1,30 @@
+{% capture output %}
+{% comment %}https://github.com/jekyll/jekyll/issues/260{% endcomment %}
+{% if page.categories %}
+  {% assign category = page.categories[0] %}
+  {% assign posts = site.categories[category] %}
+  {% for post in posts %}
+    {% if post.url == page.url %}
+      {% assign post_index0 = forloop.index0 %}
+      {% assign post_index1 = forloop.index %}
+    {% endif %}
+  {% endfor %}
+  {% for post in posts %}
+    {% if post_index0 == forloop.index %}
+      {% assign next_post = post %}
+    {% endif %}
+    {% if post_index1 == forloop.index0 %}
+      {% assign prev_post = post %}
+    {% endif %}
+  {% endfor %}
+{% endif %}
+{% endcapture %}
+{% if prev_post or next_post %}
+  <div class="paginator">
+    <div class="container">
+    {% if prev_post %}<a class="btn btn-primary" href="{{ prev_post.url }}" title="{{ prev_post.title }}">Anterior</a>{% else %}<span class="btn btn-default disabled" title="{{ prev_post.title }}">Anterior</a>{% endif %}
+    &nbsp;
+    {% if next_post %}<a class="btn btn-primary" href="{{ next_post.url }}" title="{{ next_post.title }}">Siguiente</a>{% else %}<span class="btn btn-default disabled" title="{{ next_post.title }}">Siguiente</a>{% endif %}
+    </div>
+  </div>
+{% endif %}

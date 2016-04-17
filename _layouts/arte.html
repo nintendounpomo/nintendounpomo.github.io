@@ -1,0 +1,39 @@
+---
+layout: bare
+nup_tmb_width: 240
+use_lightbox: true
+---
+<main>
+  <article class="seccion_arte">
+
+    <header class="hero-unit hero-unit-arte">
+      <div class="darken">
+        <div class="container">
+          <h1>{{ page.title }}</h1>{% if page.subtitle %}
+          <div class="hero-unit-subtitle">{{ page.subtitle }}</div>{% endif %}
+        </div>
+      </div>
+    </header>
+
+    <div class="post">
+      <div class="container">
+        <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+        <div class="row">
+          <div class="post-img col-md-4">
+            <a href="{{ page.nup_img_src }}" data-lightbox="nupimage1" data-title="{{ page.title }}">
+              <span class="rollover"></span>
+              <img src="{{ page.nup_img_src }}" class="img-responsive" alt="">
+              <span>Click para agrandar</span>
+            </a>
+          </div>
+
+          <div class="post-body col-md-8">
+            {{ content }}
+          </div>
+        </div><!-- .row -->
+      </div><!-- .container -->
+    </div><!-- .post -->
+
+  </article>
+{% include snip-paginator.html %}
+</main>

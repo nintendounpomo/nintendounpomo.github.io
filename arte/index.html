@@ -1,0 +1,26 @@
+---
+layout: bare
+title: "Arte NUP"
+---
+<main>
+<header class="hero-unit hero-unit-bg">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+  </div>
+</header>
+<div class="galeria">
+  <div class="container">
+    <div class="row">
+    {% for post in site.categories.arte %}
+      <div class="post-img col-xs-6 col-md-3 col-lg-2">
+        <a href="{{ post.url }}" data-lightbox="nupimage1" data-title="{{ post.title }}">
+          <span class="rollover"></span>
+          <img src="{{ post.nup_tmb_src }}" class="img-responsive" alt="{{ post.subtitle }}">
+        </a>
+        <span class="galeria-thumbnail-title">{{ post.title }}</span>
+      </div>
+    {% endfor %}
+    </div>
+  </div>
+</div>
+</main>
