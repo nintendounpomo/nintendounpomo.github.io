@@ -31,6 +31,7 @@ use_lightbox: true
             <section class="post-body">
             {{ content }}
             </section>{% if site.production %}
+{% include snip-paginator.html %}
             <section class="post-comments">
               <div id="disqus_thread"></div>
               <script>
@@ -55,5 +56,4 @@ use_lightbox: true
     </div><!-- .post -->
 
   </article>
-{% include snip-paginator.html %}
 </main>
