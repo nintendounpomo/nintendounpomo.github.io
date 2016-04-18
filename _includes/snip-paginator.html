@@ -20,11 +20,13 @@
 {% endif %}
 {% endcapture %}
 {% if prev_post or next_post %}
-  <div class="paginator">{% if add_container %}
+  <div class="paginator">{% if include.add_container %}
     <div class="container">{% endif %}
-    {% if prev_post %}<a class="btn btn-primary" href="{{ prev_post.url }}" title="{{ prev_post.title }}">Anterior</a>{% else %}<span class="btn btn-default disabled" title="{{ prev_post.title }}">Anterior</span>{% endif %}
-    &nbsp;
-    {% if next_post %}<a class="btn btn-primary" href="{{ next_post.url }}" title="{{ next_post.title }}">Siguiente</a>{% else %}<span class="btn btn-default disabled" title="{{ next_post.title }}">Siguiente</span>{% endif %}
-    </div>{% if add_container %}
+    {% if prev_post %}<a class="btn btn-primary" href="{{ prev_post.url }}" title="{{ prev_post.title }}"><span class="typcn typcn-chevron-left"></span> Anterior</a>{% else %}<span class="btn btn-default disabled" title="{{ prev_post.title }}"><span class="typcn typcn-chevron-left"></span> Anterior</span>{% endif %}
+    &nbsp;{% if include.add_index %}
+    <a class="btn btn-primary" href="{{ include.add_index }}" title="&Iacute;ndice"><span class="typcn typcn-home"></span> &Iacute;ndice</a>
+    &nbsp;{% endif %}
+    {% if next_post %}<a class="btn btn-primary" href="{{ next_post.url }}" title="{{ next_post.title }}">Siguiente <span class="typcn typcn-chevron-right"></span></a>{% else %}<span class="btn btn-default disabled" title="{{ next_post.title }}">Siguiente <span class="typcn typcn-chevron-right"></span></span>{% endif %}
+    </div>{% if include.add_container %}
   </div>{% endif %}
 {% endif %}

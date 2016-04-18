@@ -2,6 +2,7 @@
 layout: bare
 nup_tmb_width: 240
 use_lightbox: true
+use_typicons: true
 ---
 <main>
   <article class="seccion_arte">
@@ -30,8 +31,8 @@ use_lightbox: true
           <div class="col-md-8">
             <section class="post-body">
             {{ content }}
-            </section>{% if site.production %}
-{% include snip-paginator.html %}
+            </section>
+{% include snip-paginator.html add_index="/arte" %}{% if site.production %}
             <section class="post-comments">
               <div id="disqus_thread"></div>
               <script>
