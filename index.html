@@ -1,5 +1,28 @@
 ---
 layout: bare
+header: |
+  <style type="text/css">
+  .hero-unit-artattack {
+    background-color: white;
+    background-image: url(/img/bg-04.jpg);
+  }
+
+  .hero-unit-artattack .hero-unit-section-name, .hero-unit-artattack h1, .hero-unit-artattack .hero-unit-subtitle {
+    color: #333;
+    text-shadow: 0 0 0.5ex white;
+  }
+
+  .hero-unit-artattack .hero-unit-subtitle {
+    color: #8A33B9;
+    background-color: rgba(255,255,255, 0.8);
+    padding: 1ex 1em;
+    border-radius: 1ex;
+  }
+
+  .hero-unit-artattack h1 {
+    color: red;
+  }
+  </style>
 ---
 <main>
 <header class="hero-unit" style="background-image: url({{ "/img/bg-wired-01.jpg" | prepend:site.baseurl }})">
@@ -46,10 +69,23 @@ layout: bare
 <section class="hero-unit" style="background-color: #000; background-image: url({{ "/img/sec/prod/iap-hero-bg.jpg" | prepend:site.baseurl }})">
   <div class="container">
     <img src="{{ "/img/sec/prod/iap-monitor-400x302.png" | prepend:site.baseurl }}" width="400" height="302" alt="" class="hero-unit-img">
-    <p>Software</p>
+    <p class="hero-unit-section-name">Software</p>
     <h1>Internet Anal Perforator</h1>
     <div class="hero-unit-subtitle">Porque a veces defenderse no es suficiente</div>
     <p><a href="{{ "/sec/prod/iap.html" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Conozca m&aacute;s</a></p>
+  </div>
+</section>
+
+<section class="hero-unit hero-unit-artattack">
+  <div class="container">
+    <img src="{{ "/img/ecce-homo-art-attack.png" | prepend:site.baseurl }}" width="416" height="400" alt="" class="hero-unit-img">
+    <p class="hero-unit-section-name">Secciones</p>
+    <h1>Arte NUP</h1>
+    <div class="hero-unit-subtitle">
+    <p>Iniciamos el <em>proyecto de restauraci&oacute;n y preservaci&oacute;n del arte NUP</em>.</p>
+    <p>Descubra c&oacute;mo estamos trabajando para preservar este invaluable legado cultural del siglo pasado.</p>
+    </div>
+    <p><a href="{{ "/arte" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
   </div>
 </section>
 
