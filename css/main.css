@@ -98,7 +98,7 @@ img.toleft {
  transition: border-color 500ms ease, color 500ms ease;
 }
 
-.navbar-nav a:hover {
+.navbar-nav a:hover, .navbar-nav .active {
  border-top-color: #22D;
 }
 
