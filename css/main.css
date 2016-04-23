@@ -157,6 +157,14 @@ img.toleft {
  margin: 10px 0 10px 10px;
 }
 
+@media (max-width: 992px) {
+ .hero-unit-img {
+  float: none;
+  display: block;
+  margin: 10px auto;
+ }
+}
+
 .hero-unit h1, .hero-unit-subtitle {
  font-family: Montserrat, Arial, sans-serif;
  font-weight: normal;

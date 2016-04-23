@@ -1,0 +1,53 @@
+---
+---
+
+.feed-headlines {
+  margin: 4ex 0;
+}
+
+.feed-headlines ul {
+  margin: 0;
+  padding: 0;
+}
+
+.feed-headlines li {
+  list-style: none;
+  margin: 2ex 0;
+  padding: 0;
+  width: 50%;
+  float: left;
+}
+
+.feed-headlines li:first-child {
+  padding-right: 2em;
+}
+
+.feed-headlines li:last-child {
+  padding-left: 2em;
+}
+
+.feed-headlines .headline {
+  display: block;
+  font-family: Montserrat, sans-serif;
+  font-weight: normal;
+  font-size: 15pt;
+  border-bottom: 1px solid #8AB933;
+}
+
+.feed-headlines :hover {
+  text-decoration: none;
+}
+
+.feed-headlines .post-img {
+  float: left;
+  margin: 0 2em 1ex 0;
+  display: none;
+}
+
+.feed-headlines #creditfooter {
+  display: none;
+  visibility: hidden;
+  text-align: center;
+  margin: 0 auto;
+}
+
