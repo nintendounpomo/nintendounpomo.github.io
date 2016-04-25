@@ -417,6 +417,8 @@ span.rollover {
  font-size: 10pt;
  font-style: italic;
  margin-top: 1ex;
+ height: 4ex;
+ overflow: ellipsis;
 }
 
 
