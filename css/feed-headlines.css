@@ -14,16 +14,21 @@
   list-style: none;
   margin: 2ex 0;
   padding: 0;
-  width: 50%;
-  float: left;
 }
 
-.feed-headlines li:first-child {
-  padding-right: 2em;
-}
+@media (min-width: 992px) {
+  .feed-headlines li {
+    width: 50%;
+    float: left;
+  }
 
-.feed-headlines li:last-child {
-  padding-left: 2em;
+  .feed-headlines li:first-child {
+    padding-right: 2em;
+  }
+
+  .feed-headlines li:last-child {
+    padding-left: 2em;
+  }
 }
 
 .feed-headlines .headline {
