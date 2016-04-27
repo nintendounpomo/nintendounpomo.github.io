@@ -1,6 +1,7 @@
 ---
 layout: bare
 title: "Art&iacute;culos"
+header: '<link rel="stylesheet" type="text/css" href="/css/seccion-index.css">'
 ---
 <main>
 <header class="hero-unit hero-unit-articulos">
@@ -12,11 +13,7 @@ title: "Art&iacute;culos"
 </header>
 <section class="lista-posts">
   <div class="container">
-    <ul>
-    {% for post in site.categories.articulos %}
-      <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-    </ul>
+{% include snip-index-seccion-sindesc.html category=site.categories.articulos %}
   </div>
 </section>
 </main>

@@ -1,0 +1,14 @@
+    <div class="row">
+      <dl class="lista lista-relatos">
+      {% for post in include.category %}
+        {% unless post.hidden %}
+        <div class="col-md-6">
+          <article class="item"{% if post.icon %} style="background-image:url({{ post.icon }})"{% endif %}>
+            <dt><a href="{{ post.url }}">{{ post.title }}</a></dt>
+            <dd>{{ post.excerpt | strip_html | truncatewords:20 }}</dd>
+          </article>
+        </div>
+        {% endunless %}
+      {% endfor %}
+      </dl>
+    </div>

@@ -79,14 +79,13 @@ dl {
 }
 
 dt {
- margin: 1.4em 0 2pt;
+ margin: 1.5em 0 0.25ex;
  font-weight: bold;
  display: list-item;
- list-style-position: inside;
+ list-style-position: outside;
 }
 
 dd, dd li {
- margin-left: 2em;
 }
 
 table {
@@ -585,7 +584,7 @@ a.ExpliArchivo:hover {
  line-height: 21pt;
 }
 
-.post-relato hr {
+.seccion_relatos .post-body hr {
  border: 0;
  background: url(http://lh6.googleusercontent.com/-WBpdL2wae5k/UAMpCeVdh4I/AAAAAAAAAvo/j7-FKzkMgek/s800/flourish.png) no-repeat center center;
  width: 102px;

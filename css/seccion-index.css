@@ -1,0 +1,35 @@
+.lista-posts .lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista-posts .lista .item {
+  background: transparent url(/img/icon-articulos.png) no-repeat top left;
+  padding-left: 64px;
+  margin: 2ex 0;
+  height: 48px;
+  overflow: hidden;
+}
+
+.lista-posts .item dt {
+  margin-top: 0;
+}
+
+.lista-posts .item li {
+  margin-top: 12px;
+}
+
+.lista-posts .item dd {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.lista-posts .lista-articulos .item {
+ background-image: url(/img/icon-articulos.png);
+}
+
+.lista-posts .lista-relatos .item {
+ background-image: url(/img/icon-relatos.png);
+}
