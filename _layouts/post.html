@@ -2,7 +2,7 @@
 layout: bare
 ---
 <main>
-  <article>
+  <article class="seccion_{{ page.categories | first }}">
 
     <header class="hero-unit{% if page.nup_hero_unit_type %} {{ page.nup_hero_unit_type }}{% else %} hero-unit-bg{% endif %}">
       {% if page.nup_hero_unit_layer1 %}<div class="{{ page.nup_hero_unit_layer1 }}">{% endif %}
@@ -15,9 +15,9 @@ layout: bare
       {% if page.nup_hero_unit_layer1 %}</div>{% endif %}
     </header>
 
-    <div class="post">
+    <div class="post{% if page.nup_main_type %} {{ page.nup_main_type }}{% else %}{% if layout.nup_main_type %} {{ layout.nup_main_type }}{% endif %}{% endif %}">
       <div class="container">
-        <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+        {% comment %}<div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>{% endcomment %}
         <div class="post-body">
           {{ content }}
         </div>

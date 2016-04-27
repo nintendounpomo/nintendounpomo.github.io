@@ -18,7 +18,7 @@ use_typicons: true
 
     <div class="post">
       <div class="container">
-        <div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+        {% comment %}<div class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>{% endcomment %}
         <div class="row">
           <div class="post-img col-md-4">
             <a href="{{ page.nup_img_src }}" data-lightbox="nupimage1" data-title="{{ page.title }}">

@@ -69,6 +69,38 @@ img.toleft {
  float: left;
 }
 
+
+ul, dl {
+ list-style: url({% if site.production %}http://www.websitebullets.com/bullet/433/4.gif{% else %}/local/img/bullet/433/4.gif{% endif %});
+}
+
+dl {
+ margin: 3ex 1em;
+}
+
+dt {
+ margin: 1.4em 0 2pt;
+ font-weight: bold;
+ display: list-item;
+ list-style-position: inside;
+}
+
+dd, dd li {
+ margin-left: 2em;
+}
+
+table {
+ border: 1px solid #801572;
+ border-collapse: collapse;
+ margin: 4ex auto;
+}
+
+th, td {
+ padding: 1ex 1.5em;
+ border: 1px solid #801572;
+}
+
+
 .navbar {
  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
  margin-bottom: 0;
@@ -144,6 +176,14 @@ img.toleft {
 .hero-unit-arte {
  background-image: url({% if site.production %}http://www.freewebheaders.com/wordpress/wp-content/gallery/artistic-abstract/colorful-watercolor-paint-abstract-website-header.jpg{% else %}{{ "/local/img/colorful-watercolor-paint-abstract-website-header.jpg" | prepend:site.baseurl }}{% endif %});
  background-color: #F8672C;
+}
+
+.hero-unit-articulos {
+ background-image: url({% if site.production %}http://www.lgm.ac-grenoble.fr/wordpress/wp-content/uploads/2013/11/tumblr_static_neon1.jpg{% else %}{{ "/local/img/tumblr_static_neon1.jpg" | prepend:site.baseurl }}{% endif %});
+}
+
+.hero-unit-relatos {
+ background-image: url(/img/bg-05.jpg);
 }
 
 .hero-unit .darken {
@@ -236,12 +276,16 @@ img.toleft {
 }
 
 
+.lista-posts {
+ margin-top: 4ex;
+ margin-bottom: 4ex;
+}
 
 /******************************************************************************
   Detalles
  ******************************************************************************/
 .post {
- margin-top: 2.5ex;
+ margin-top: 8ex;
  margin-bottom: 4ex;
 }
 
@@ -266,6 +310,10 @@ img.toleft {
  margin-top: 2.5ex;
 }
 
+.post-body h1:first-child {
+ margin-top: 0;
+}
+
 .post .first {
  margin-top: 0;
 }
@@ -275,16 +323,15 @@ img.toleft {
  line-height: 165%;
 }
 
-.post-body ul {
+ul.Caracteristicas {
  list-style: url({% if site.production %}http://www.websitebullets.com/bullet/859/3.gif{% else %}/local/img/bullet/859/3.gif{% endif %});
 }
 
-.seccion_arte .post-body ul {
- list-style: url({% if site.production %}http://www.websitebullets.com/bullet/433/4.gif{% else %}/local/img/bullet/433/4.gif{% endif %});
+.lista-posts ul {
+ list-style: url({% if site.production %}http://www.websitebullets.com/bullet/433/1.gif{% else %}/local/img/bullet/433/1.gif{% endif %});
 }
 
-.post-body ul p,
-.seccion_arte .post-body li {
+.post-body ul p, .post-body li {
  margin-bottom: 1.5ex;
 }
 
@@ -296,13 +343,14 @@ img.toleft {
 }
 
 
-.post-body .first:first-letter {
+.post-body .first .cap {
  display: inline-block;
  float: left;
  vertical-align: top;
- margin: 0.2ex 0.2ex 0 0;
+ margin: 0.5ex 0.2ex 0.2ex 0;
  font-size: 8ex;
 }
+
 
 .post-body .last:after {
  content: " \2666";
@@ -310,7 +358,60 @@ img.toleft {
  color: #AAA;
 }
 
+.post-body img {
+ border-radius: 8px;
+}
 
+.post-body .icon {
+ border-radius: 0;
+}
+
+.post-body .post-img {
+ display: inline-block;
+ float: right;
+ margin: 0 0 0.25ex 1em;
+}
+
+
+.post-body p.Pregunta {
+ font-weight: bold;
+ margin: 5ex 0 1ex;
+ text-indent: 0;
+}
+
+.post-body p.Respuesta {
+ text-indent: 0;
+ margin: 1ex 0;
+}
+
+.post-body div.Queja, .post-body p.Queja {
+ font-weight: bold;
+}
+
+.post-body p.DialogoPersonaA {
+ font-weight: bold;
+ text-indent: 0;
+}
+
+.post-body p.DialogoPersonaB {
+ font-style: italic;
+ text-indent: 0;
+}
+
+.definiciones {
+ border: 0;
+ border-top: 1px solid #801572;
+}
+
+.definiciones th {
+ text-align: right;
+ vertical-align: top;
+}
+
+.definiciones th, .definiciones td {
+ border: 0;
+ border-bottom: 1px solid #801572;
+}
 
 
 /* Arte NUP */
@@ -463,6 +564,36 @@ a.ExpliArchivo:hover {
  line-height: 17px;
 }
 
+.FinCuento {
+ text-indent: 0 !important;
+ text-align: center;
+ margin: 6ex 0 3ex !important;
+ font-size: 21pt;
+ font-style: italic;
+ font-family: Georgia, Times New Roman, serif;
+ font-weight: bold;
+ letter-spacing: 0.4ex;
+}
+
+
+.seccion_relatos .post-body {
+ max-width: 34em;
+ margin: 1ex auto 0;
+ padding: 0;
+ font-family: 'Gentium Basic', Georgia, serif;
+ font-size: 14pt;
+ line-height: 21pt;
+}
+
+.post-relato hr {
+ border: 0;
+ background: url(http://lh6.googleusercontent.com/-WBpdL2wae5k/UAMpCeVdh4I/AAAAAAAAAvo/j7-FKzkMgek/s800/flourish.png) no-repeat center center;
+ width: 102px;
+ height: 35px;
+ margin: 9ex auto;
+}
+
+
 .post-body .copete {
  background-color: #FFFEDA;
  background: -moz-linear-gradient(center top, #FEFCAF, #FFFEDA);
@@ -471,11 +602,58 @@ a.ExpliArchivo:hover {
  border-radius: 8px;
  
  padding: 3ex 2.5em;
- margin-top: 3ex;
  margin-bottom: 3ex;
 
  text-indent: 0;
  font-style: italic;
+}
+
+
+.foto {
+ background-color: white;
+ border: 1px solid #DDD;
+ border-radius: 3px !important;
+ padding: 9px;
+ box-shadow: 3px 3px 4px #DDD;
+ margin-bottom: 1ex !important;
+ text-indent: 0;
+}
+
+.zoom {
+ display: inline-block;
+ text-indent: 0;
+ padding: 9px 9px 39px 9px;
+ background: white url(http://lh3.googleusercontent.com/-iQcyHq4czic/T_76w5QJBoI/AAAAAAAAAn0/ta-ONmlLaq4/s800/icon-zoom-hover.png) no-repeat center bottom;
+ border: 1px solid #DDD;
+ border-radius: 0.5ex;
+ box-shadow: 0 0 8px 1px #DDD;
+}
+
+.zoom:hover {
+ box-shadow: 0 0 4px #1CA1CF;
+ border-color: #1CA1CF;
+ background-image: url(http://lh5.googleusercontent.com/-BBotvu86cnc/T_72ARbRudI/AAAAAAAAAnk/OmZ4NHTuKH8/s800/icon-zoom.png);
+ transition: 1s;
+}
+
+.zoom img {
+ border-radius: 0.25ex;
+}
+
+.izquierda {
+ float: left;
+ margin: 0 1em 1ex 0 !important;
+}
+
+.derecha {
+ float: right;
+ margin: 0 0 1ex 1em !important;
+}
+
+.centro {
+ margin: 1ex auto !important;
+ text-align: center;
+ text-indent: 0 !important;
 }
 
 
