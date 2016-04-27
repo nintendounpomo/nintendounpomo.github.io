@@ -4,7 +4,7 @@ layout: bare
 <main>
   <article class="seccion_{{ page.categories | first }}">
 
-    <header class="hero-unit{% if page.nup_hero_unit_type %} {{ page.nup_hero_unit_type }}{% else %} hero-unit-bg{% endif %}">
+    <header class="hero-unit{% if page.nup_hero_unit_type %} {{ page.nup_hero_unit_type }}{% else %}{% if layout.nup_hero_unit_type %} {{ layout.nup_hero_unit_type }}{% else %} hero-unit-bg{% endif %}{% endif %}">
       {% if page.nup_hero_unit_layer1 %}<div class="{{ page.nup_hero_unit_layer1 }}">{% endif %}
       <div class="container">
         {% if page.nup_hero_unit_layer2 %}<div class="{{ page.nup_hero_unit_layer2 }}">{% endif %}

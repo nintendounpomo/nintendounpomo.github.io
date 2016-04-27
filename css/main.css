@@ -182,7 +182,7 @@ th, td {
 }
 
 .hero-unit-relatos {
- background-image: url(/img/bg-05.jpg);
+ background-image: url({{ "/img/bg-05.jpg" | prepend:site.baseurl }});
 }
 
 .hero-unit .darken {
