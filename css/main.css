@@ -75,7 +75,7 @@ ul, dl {
 }
 
 dl {
- margin: 3ex 1em;
+ margin: 3ex 2em;
 }
 
 dt {
@@ -563,6 +563,12 @@ a.ExpliArchivo:hover {
  line-height: 17px;
 }
 
+.Firma {
+ text-align: right;
+ text-indent: 0;
+ font-style: italic;
+}
+
 .FinCuento {
  text-indent: 0 !important;
  text-align: center;
@@ -583,6 +589,14 @@ a.ExpliArchivo:hover {
  font-size: 14pt;
  line-height: 21pt;
  color: #222;
+}
+
+.seccion_relatos .post-body p {
+ text-indent: 2em;
+}
+
+.seccion_relatos .post-body p.first {
+ text-indent: 0;
 }
 
 .seccion_relatos .post-body hr {
