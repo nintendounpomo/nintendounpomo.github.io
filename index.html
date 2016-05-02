@@ -24,6 +24,27 @@ header: |
     color: red;
   }
 
+  .hero-unit-malevoychapu {
+    background-color: #79298C;
+    background-image: url(/img/bg-07.jpg);
+  }
+
+  .hero-unit-monkeypress {
+    background-color: #EEE;
+    background-size: auto;
+    background-repeat: repeat;
+    background-image: url(/img/bg-06.png);
+  }
+
+  .hero-unit-monkeypress,
+  .hero-unit-monkeypress .hero-unit-subtitle,
+  .hero-unit-monkeypress .hero-unit-body,
+  .hero-unit-monkeypress h1,
+  .hero-unit-monkeypress p {
+    color: #333;
+    text-shadow: none;
+  }
+
   </style>
 ---
 <main>
@@ -91,11 +112,41 @@ header: |
   </div>
 </section>
 
+<section class="hero-unit hero-unit-malevoychapu">
+  <div class="container">
+    <img src="{{ "/img/malevoychapu.png" | prepend:site.baseurl }}" width="320" height="398" class="hero-unit-img" alt="Malevo y Chapu">
+    <p class="hero-unit-section-name">Secciones</p>
+    <h1>Relatos</h1>
+    <div class="hero-unit-subtitle">
+      Las haza&ntilde;as de Chapu y compa&ntilde;&iacute;a
+    </div>
+    <div class="hero-unit-body">
+      <p>&iquest;Mitos griegos?</p>
+      <p>&iquest;Leyendas urbanas?</p>
+      <p>&iquest;Verdades exageradas a trav&eacute;s del vidrio de una botella?</p>
+      <p>Desc&uacute;bralo aqu&iacute;.</p>
+    </div>
+    <p><a href="{{ "/relatos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
+  </div>
+</section>
+
+<section class="hero-unit hero-unit-monkeypress">
+  <div class="container">
+    <img src="{{ "/img/monkey-press.png" | prepend:site.baseurl }}" width="588" height="441" class="hero-unit-img" alt="Redactor tipeando">
+    <p class="hero-unit-section-name">Secciones</p>
+    <h1>Art&iacute;culos</h1>
+    <div class="hero-unit-subtitle">
+      Los trabajos inclasificables de nuestro staff
+    </div>
+    <p><a href="{{ "/articulos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
+  </div>
+</section>
+{% if site.production %}
 <section class="feed-headlines">
   <div class="container">
     <h1>Lo &uacute;ltimo en el blog</h1>
     <script src="http://feeds.feedburner.com/ProyectoNUP2012?format=sigpro" type="text/javascript" ></script><noscript><p>Suscr&iacute;base al RSS en: <a href="http://feeds.feedburner.com/ProyectoNUP2012"></a>FeedBurner</p> </noscript>
   </div>
 </section>
-
+{% endif %}
 </main>

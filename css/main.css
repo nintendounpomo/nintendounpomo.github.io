@@ -194,6 +194,9 @@ th, td {
 .hero-unit-img {
  float: right;
  margin: 10px 0 10px 10px;
+ display: block;
+ max-width: 100%;
+ height: auto;
 }
 
 @media (max-width: 992px) {
@@ -225,6 +228,10 @@ th, td {
  line-height: 1;
  margin-top: 0;
  margin-bottom: 12pt;
+}
+
+.hero-unit-body {
+ margin-bottom: 4ex;
 }
 
 .hero-unit-subtitle {
