@@ -89,6 +89,21 @@ header: |
   </div>
 </section>
 
+<section class="hero-unit" style="background-color: #222; background-image: url({% if site.production %}http://gorbeiakoaterpea.eus/wp-content/uploads/2015/03/Fotos-entorno4.jpg{% else %}{{ "/local/img/gaseosie-fotos-entorno4.jpg" | prepend:site.baseurl }}{% endif %}); background-position: top right;">
+  <div class="container">
+    <p class="hero-unit-section-name">Productos</p>
+    <h1>Gaseosa<br>La Cruz de Gorbea</h1>
+    <div class="hero-unit-subtitle">Sabor m&aacute;s errefrescante no hay</div>
+    <div class="hero-unit-body">
+      <p>El verdadero sabor vasco llega a latinoam&eacute;rica.</p>
+      <p>Pura, rica y de nuestra tierra.</p>
+      <p>Deliciosamente aromatizada.</p>
+      <p>Con agua limpia.</p>
+    </div>
+    <p><a href="{{ "/productos/gaseosie.html" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Conozca m&aacute;s</a></p>
+  </div>
+</section>
+
 <section class="hero-unit" style="background-color: #000; background-image: url({{ "/img/sec/prod/iap-hero-bg.jpg" | prepend:site.baseurl }})">
   <div class="container">
     <img src="{{ "/img/sec/prod/iap-monitor-400x302.png" | prepend:site.baseurl }}" width="400" height="302" alt="" class="hero-unit-img">
