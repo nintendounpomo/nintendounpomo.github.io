@@ -1,14 +1,20 @@
 ---
 layout: bare
 title: "Relatos"
-header: '<link rel="stylesheet" type="text/css" href="/css/seccion-index.css">'
+header: |
+  <link rel="stylesheet" type="text/css" href="/css/seccion-index.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero/malevoychapu.css">
 ---
 <main>
+{% comment %}
 <header class="hero-unit hero-unit-relatos">
     <div class="container">
       <h1>{{ page.title }}</h1>
     </div>
 </header>
+{% endcomment %}
+{% include hero/malevoychapu.html type="header" link=false %}
+
 <section class="lista-posts">
   <div class="container">
 {% include snip-index-seccion-condesc.html category=site.categories.relatos %}

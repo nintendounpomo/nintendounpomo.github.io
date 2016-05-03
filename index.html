@@ -2,50 +2,9 @@
 layout: bare
 header: |
   <link rel="stylesheet" type="text/css" href="/css/feed-headlines.css">
-  <style type="text/css">
-  .hero-unit-artattack {
-    background-color: white;
-    background-image: url(/img/bg-04.jpg);
-  }
-
-  .hero-unit-artattack .hero-unit-section-name, .hero-unit-artattack h1, .hero-unit-artattack .hero-unit-subtitle {
-    color: #333;
-    text-shadow: 0 0 0.5ex white;
-  }
-
-  .hero-unit-artattack .hero-unit-subtitle {
-    color: #8A33B9;
-    background-color: rgba(255,255,255, 0.8);
-    padding: 1ex 1em;
-    border-radius: 1ex;
-  }
-
-  .hero-unit-artattack h1 {
-    color: red;
-  }
-
-  .hero-unit-malevoychapu {
-    background-color: #79298C;
-    background-image: url(/img/bg-07.jpg);
-  }
-
-  .hero-unit-monkeypress {
-    background-color: #EEE;
-    background-size: auto;
-    background-repeat: repeat;
-    background-image: url(/img/bg-06.png);
-  }
-
-  .hero-unit-monkeypress,
-  .hero-unit-monkeypress .hero-unit-subtitle,
-  .hero-unit-monkeypress .hero-unit-body,
-  .hero-unit-monkeypress h1,
-  .hero-unit-monkeypress p {
-    color: #333;
-    text-shadow: none;
-  }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="/css/hero/artattack.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero/malevoychapu.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero/monkeypress.css">
 ---
 <main>
 <header class="hero-unit" style="background-image: url({{ "/img/bg-wired-01.jpg" | prepend:site.baseurl }})">
@@ -55,10 +14,44 @@ header: |
     <div class="hero-unit-subtitle">Que tu estancia sea electrizante</div>
     <p>Una vez m&aacute;s, <strong>Nintendo Un Pomo</strong> est&aacute; de regreso.</p>
     <p>Una vez m&aacute;s, decimos que nos quedamos.</p>
-    <p>Trece a&ntilde;os dando vueltas, a veces llegando a alguna parte.</p>
+    <p>Dicecis&eacute;is a&ntilde;os dando vueltas, a veces llegando a alguna parte.</p>
     <p>Una vez m&aacute;s, veremos.</p>
   </div>
 </header>
+
+{%comment%}
+<section class="feature-box">
+  <div class="container">
+    <h1>Secciones</h1>
+    <div class="row">
+      <div class="feature-item col-md-4">
+        <div class="feature-item-body">
+          <img src="{{ "/img/ecce-homo-art-attack.png" | prepend:site.baseurl }}" alt="" class="feature-icon-responsive">
+          <h2>Arte NUP</h2>
+          <p>Nuestro trabajo de restauraci&oacute;n en progreso.</p>
+          <p><a href="{{ "/arte" | prepend:site.baseurl }}" class="btn btn-primary">Ver secci&oacute;n</a></p>
+        </div>
+      </div>
+      <div class="feature-item col-md-4">
+        <div class="feature-item-body">
+          <img src="{{ "/img/malevoychapu.png" | prepend:site.baseurl }}" class="feature-icon-responsive" alt="Malevo y Chapu">
+          <h2>Relatos</h2>
+          <p>Las haza&ntilde;as de Chapu y compa&ntilde;&iacute;a.</p>
+          <p><a href="{{ "/relatos" | prepend:site.baseurl }}" class="btn btn-primary">Ver secci&oacute;n</a></p>
+        </div>
+      </div>
+      <div class="feature-item col-md-4">
+        <div class="feature-item-body">
+          <img src="{{ "/img/monkey-press.png" | prepend:site.baseurl }}" class="feature-icon-responsive" alt="Redactor tipeando">
+          <h2>Art&iacute;culos</h2>
+          <p>Los trabajos inclasificables de nuestro staff.</p>
+          <p><a href="{{ "/articulos" | prepend:site.baseurl }}" class="btn btn-primary">Ver secci&oacute;n</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{%endcomment%}
 
 <section class="feature-box">
   <div class="container">
@@ -113,49 +106,9 @@ header: |
     <p><a href="{{ "/sec/prod/iap.html" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Conozca m&aacute;s</a></p>
   </div>
 </section>
-
-<section class="hero-unit hero-unit-artattack">
-  <div class="container">
-    <img src="{{ "/img/ecce-homo-art-attack.png" | prepend:site.baseurl }}" width="416" height="400" alt="" class="hero-unit-img">
-    <p class="hero-unit-section-name">Secciones</p>
-    <h1>Arte NUP</h1>
-    <div class="hero-unit-subtitle">
-    <p>Iniciamos el <em>proyecto de restauraci&oacute;n y preservaci&oacute;n del arte NUP</em>.</p>
-    <p>Descubra c&oacute;mo estamos trabajando para preservar este invaluable legado cultural del siglo pasado.</p>
-    </div>
-    <p><a href="{{ "/arte" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
-  </div>
-</section>
-
-<section class="hero-unit hero-unit-malevoychapu">
-  <div class="container">
-    <img src="{{ "/img/malevoychapu.png" | prepend:site.baseurl }}" width="320" height="398" class="hero-unit-img" alt="Malevo y Chapu">
-    <p class="hero-unit-section-name">Secciones</p>
-    <h1>Relatos</h1>
-    <div class="hero-unit-subtitle">
-      Las haza&ntilde;as de Chapu y compa&ntilde;&iacute;a
-    </div>
-    <div class="hero-unit-body">
-      <p>&iquest;Mitos griegos?</p>
-      <p>&iquest;Leyendas urbanas?</p>
-      <p>&iquest;Verdades exageradas a trav&eacute;s del vidrio de una botella?</p>
-      <p>Desc&uacute;bralo aqu&iacute;.</p>
-    </div>
-    <p><a href="{{ "/relatos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
-  </div>
-</section>
-
-<section class="hero-unit hero-unit-monkeypress">
-  <div class="container">
-    <img src="{{ "/img/monkey-press.png" | prepend:site.baseurl }}" width="588" height="441" class="hero-unit-img" alt="Redactor tipeando">
-    <p class="hero-unit-section-name">Secciones</p>
-    <h1>Art&iacute;culos</h1>
-    <div class="hero-unit-subtitle">
-      Los trabajos inclasificables de nuestro staff
-    </div>
-    <p><a href="{{ "/articulos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>
-  </div>
-</section>
+{% include hero/artattack.html type="section" link=true %}
+{% include hero/malevoychapu.html type="section" link=true %}
+{% include hero/monkeypress.html type="section" link=true %}
 {% if site.production %}
 <section class="feed-headlines">
   <div class="container">

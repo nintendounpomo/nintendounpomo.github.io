@@ -263,10 +263,22 @@ th, td {
  letter-spacing: 2pt;
 }
 
-.feature-icon {
+.feature-icon, .feature-icon-responsive {
  margin-left: auto;
  margin-right: auto;
  display: block;
+}
+
+.feature-icon-responsive {
+ max-width: 100%;
+ height: auto;
+}
+
+@media (min-width: 992px) {
+  .feature-icon-responsive {
+    width: auto;
+    height: 200px;
+  }
 }
 
 .feature-item h2 {

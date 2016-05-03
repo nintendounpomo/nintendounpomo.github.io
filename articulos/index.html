@@ -1,9 +1,12 @@
 ---
 layout: bare
 title: "Art&iacute;culos"
-header: '<link rel="stylesheet" type="text/css" href="/css/seccion-index.css">'
+header: |
+  <link rel="stylesheet" type="text/css" href="/css/seccion-index.css">
+  <link rel="stylesheet" type="text/css" href="/css/hero/monkeypress.css">
 ---
 <main>
+{% comment %}
 <header class="hero-unit hero-unit-articulos">
   <div class="darken">
     <div class="container">
@@ -11,6 +14,8 @@ header: '<link rel="stylesheet" type="text/css" href="/css/seccion-index.css">'
     </div>
   </div>
 </header>
+{% endcomment %}
+{% include hero/monkeypress.html type="header" link=false %}
 <section class="lista-posts">
   <div class="container">
 {% include snip-index-seccion-sindesc.html category=site.categories.articulos %}

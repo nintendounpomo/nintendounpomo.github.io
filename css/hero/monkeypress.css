@@ -1,0 +1,15 @@
+.hero-unit-monkeypress {
+ background-color: #EEE;
+ background-size: auto;
+ background-repeat: repeat;
+ background-image: url(/img/bg-06.png);
+}
+
+.hero-unit-monkeypress,
+.hero-unit-monkeypress .hero-unit-subtitle,
+.hero-unit-monkeypress .hero-unit-body,
+.hero-unit-monkeypress h1,
+.hero-unit-monkeypress p {
+ color: #333;
+ text-shadow: none;
+}

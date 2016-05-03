@@ -1,0 +1,12 @@
+<{{ include.type }} class="hero-unit hero-unit-artattack">
+  <div class="container">
+    <img src="{{ "/img/ecce-homo-art-attack.png" | prepend:site.baseurl }}" width="416" height="400" alt="" class="hero-unit-img">{% if include.link %}
+    <p class="hero-unit-section-name">Secciones</p>{% endif %}
+    <h1>Arte NUP</h1>
+    <div class="hero-unit-subtitle">
+    {% if include.link %}<p>Iniciamos el <em>proyecto de restauraci&oacute;n y preservaci&oacute;n del arte NUP</em>.</p>{% endif %}
+    <p>Descubra c&oacute;mo estamos trabajando para preservar este invaluable legado cultural del siglo pasado.</p>
+    </div>{% if include.link %}
+    <p><a href="{{ "/arte" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>{% endif %}
+  </div>
+</{{ include.type }}>

@@ -1,0 +1,17 @@
+<{{ include.type }} class="hero-unit hero-unit-malevoychapu">
+  <div class="container">
+    <img src="{{ "/img/malevoychapu.png" | prepend:site.baseurl }}" width="320" height="398" class="hero-unit-img" alt="Malevo y Chapu">{% if include.link %}
+    <p class="hero-unit-section-name">Secciones</p>{% endif %}
+    <h1>Relatos</h1>
+    <div class="hero-unit-subtitle">
+      Las haza&ntilde;as de Chapu y compa&ntilde;&iacute;a
+    </div>
+    <div class="hero-unit-body">
+      <p>&iquest;Mitos griegos?</p>
+      <p>&iquest;Leyendas urbanas?</p>
+      <p>&iquest;Verdades exageradas a trav&eacute;s del vidrio de una botella?</p>
+      <p>Desc&uacute;bralo aqu&iacute;.</p>
+    </div>{% if include.link %}
+    <p><a href="{{ "/relatos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>{% endif %}
+  </div>
+</{{ include.type }}>

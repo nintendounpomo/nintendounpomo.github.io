@@ -1,8 +1,11 @@
 ---
 layout: bare
 title: "Arte NUP"
+header: |
+  <link rel="stylesheet" type="text/css" href="/css/hero/artattack.css">
 ---
 <main>
+{% comment %}
 <header class="hero-unit hero-unit-arte">
   <div class="darken">
     <div class="container">
@@ -10,6 +13,9 @@ title: "Arte NUP"
     </div>
   </div>
 </header>
+{% endcomment %}
+{% include hero/artattack.html type="header" link=false %}
+
 <div class="galeria">
   <div class="container">
     <p class="copete"><a class="btn btn-info btn-lg" href="expli_arte.html">&iquest;Qu&eacute; es el Arte NUP?</a></p>

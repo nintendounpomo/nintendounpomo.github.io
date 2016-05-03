@@ -1,0 +1,11 @@
+<{{ include.type }} class="hero-unit hero-unit-monkeypress">
+  <div class="container">
+    <img src="{{ "/img/monkey-press.png" | prepend:site.baseurl }}" width="588" height="441" class="hero-unit-img" alt="Redactor tipeando">{% if include.link %}
+    <p class="hero-unit-section-name">Secciones</p>{% endif %}
+    <h1>Art&iacute;culos</h1>
+    <div class="hero-unit-subtitle">
+      Los trabajos inclasificables de nuestro staff
+    </div>{% if include.link %}
+    <p><a href="{{ "/articulos" | prepend:site.baseurl }}" class="btn btn-lg btn-primary">Ver secci&oacute;n</a></p>{% endif %}
+  </div>
+</{{ include.type }}>

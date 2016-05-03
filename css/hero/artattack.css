@@ -1,0 +1,20 @@
+.hero-unit-artattack {
+ background-color: white;
+ background-image: url(/img/bg-04.jpg);
+}
+
+.hero-unit-artattack .hero-unit-section-name, .hero-unit-artattack h1, .hero-unit-artattack .hero-unit-subtitle {
+ color: #333;
+ text-shadow: 0 0 0.5ex white;
+}
+
+.hero-unit-artattack .hero-unit-subtitle {
+ color: #8A33B9;
+ background-color: rgba(255,255,255, 0.8);
+ padding: 1ex 1em;
+ border-radius: 1ex;
+}
+
+.hero-unit-artattack h1 {
+ color: red;
+}
