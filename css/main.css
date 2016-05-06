@@ -133,6 +133,10 @@ th, td {
  border-top-color: #22D;
 }
 
+.navbar-nav .active {
+ font-weight: bold;
+}
+
 
 .site-footer {
  border-top: 1px solid #EEE;

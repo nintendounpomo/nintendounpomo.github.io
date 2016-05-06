@@ -9,5 +9,5 @@ url: "http://www.nupi.tk" # the base hostname & protocol for your site
 markdown: kramdown
 
 # Para prueba local comentar "exclude" y poner "production" en false
-exclude: [ local ]
-production: true
+#exclude: [ local ]
+#production: true
