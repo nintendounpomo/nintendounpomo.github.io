@@ -1,0 +1,33 @@
+---
+layout: bare
+title: "Buscar en el sitio"
+header: |
+  <link rel="stylesheet" type="text/css" href="/css/google-search.css">
+---
+<main class="google-search">
+{% comment %}
+<header class="hero-unit hero-unit-bg">
+  <div class="container">
+    <h1>{{ page.title }}</h1>
+  </div>
+</header>
+{% endcomment %}
+
+<div class="container">
+  <div>
+    <div id='cse'>Cargando cuadro de b&uacute;squeda</div>
+    <script src='//www.google.com/jsapi' type='text/javascript'></script>
+    <script type='text/javascript'>
+    google.load('search', '1', {language: 'es', style: google.loader.themes.DEFAULT});
+    google.setOnLoadCallback(function() {
+      var customSearchOptions = {};
+      var customSearchControl =   new google.search.CustomSearchControl('000693555475580600115:glnoqnzkibo', customSearchOptions);
+      customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+      var options = new google.search.DrawOptions();
+      customSearchControl.draw('cse', options);
+    }, true);
+    </script>
+  </div>
+</div>
+
+</main>
