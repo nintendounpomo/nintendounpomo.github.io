@@ -12,10 +12,11 @@
 
 .feedburnerFeedBlock>ul>li {
   list-style: none;
-  margin: 2ex 0;
+  margin: 0 0 8ex;
   padding: 0;
 }
-
+{% comment %}
+/*
 @media (min-width: 992px) {
   .feedburnerFeedBlock>ul>li {
     width: 50%;
@@ -30,7 +31,8 @@
     padding-left: 2em;
   }
 }
-
+*/
+{% endcomment %}
 .feed-headlines .headline {
   display: block;
   font-family: Montserrat, sans-serif;

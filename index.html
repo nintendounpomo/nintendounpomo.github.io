@@ -110,11 +110,18 @@ header: |
 {% include hero/malevoychapu.html type="section" link=true %}
 {% include hero/monkeypress.html type="section" link=true %}
 {% if site.production %}
-<section class="feed-headlines">
-  <div class="container">
+<div class="container">
+  <div class="row">
+  <section class="feed-headlines col-md-6">
     <h1>Lo &uacute;ltimo en el blog</h1>
     <script src="http://feeds.feedburner.com/ProyectoNUP2012?format=sigpro" type="text/javascript" ></script><noscript><p>Suscr&iacute;base al RSS en: <a href="http://feeds.feedburner.com/ProyectoNUP2012"></a>FeedBurner</p> </noscript>
+  </section>
+  <section class="feed-twitter col-md-6">
+    <h1>Lo &uacute;ltimo en Twitter</h1>
+    <a class="twitter-timeline"  href="https://twitter.com/NupBot" data-widget-id="730169068251185153" data-chrome="noheader nofooter noborders transparent" data-tweet-limit="3">Tweets por @NupBot.</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  </section>
   </div>
-</section>
+</div>
 {% endif %}
 </main>
