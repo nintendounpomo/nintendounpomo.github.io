@@ -318,7 +318,7 @@ th, td {
  letter-spacing: 2pt;
 }
 
-.post-body {
+.post-body, .post-comments {
  max-width: 42em;
 }
 
