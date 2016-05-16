@@ -131,11 +131,34 @@ th, td {
 
 .navbar-nav a:hover, .navbar-nav .active {
  border-top-color: #22D;
+ opacity: 1;
 }
 
 .navbar-nav .active {
  color: #000 !important;
 }
+
+
+.social-twitter, .social-facebook {
+ opacity: 0.4;
+ transition: opacity 500ms ease;
+ display: block;
+ height: 52px;{% comment %}/* 20 line-height + 15 padding-top + 15 padding-top + 2 border-top */{% endcomment %}
+}
+
+.social-twitter span, .social-facebook span {
+ display: none;
+}
+
+.social-twitter {
+ background: transparent url({{ "/img/comun/icon-twitter.png" | prepend:site.baseurl }}) no-repeat center center;
+}
+
+.social-facebook {
+ background: transparent url({{ "/img/comun/icon-facebook.png" | prepend:site.baseurl }}) no-repeat center center;
+}
+
+
 
 
 .site-footer {
