@@ -13,20 +13,27 @@ header: |
 </header>
 {% endcomment %}
 
+<header class="hero-unit">
+<div class="container">
+  <h1>Buscar en el sitio</h1>
+<script>
+  (function() {
+    var cx = '000693555475580600115:glnoqnzkibo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:searchbox></gcse:searchbox>
+</div>
+</header>
+
 <div class="container">
   <div>
-    <div id='cse'>Cargando cuadro de b&uacute;squeda</div>
-    <script src='//www.google.com/jsapi' type='text/javascript'></script>
-    <script type='text/javascript'>
-    google.load('search', '1', {language: 'es', style: google.loader.themes.DEFAULT});
-    google.setOnLoadCallback(function() {
-      var customSearchOptions = {};
-      var customSearchControl =   new google.search.CustomSearchControl('000693555475580600115:glnoqnzkibo', customSearchOptions);
-      customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
-      var options = new google.search.DrawOptions();
-      customSearchControl.draw('cse', options);
-    }, true);
-    </script>
+<gcse:searchresults></gcse:searchresults>
   </div>
 </div>
 
