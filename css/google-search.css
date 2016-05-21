@@ -5,6 +5,7 @@
  padding-bottom: 8ex;
  text-align: center;
  background-image: url({{ "/img/bg-08.jpg" | prepend:site.baseurl }});
+ background-color: #666;
 }
 
 .hero-unit h1 {
