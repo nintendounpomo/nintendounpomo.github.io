@@ -1,9 +1,10 @@
 # Site settings
 title: NUP
-email: info@nupi.tk
+email: info@nupi.ml
 description: NUP International, una vez más a los ponchazos en internet.
 baseurl: "" # the subpath of your site, e.g. /blog/ NOTA: No agregar barra al final.
 url: "http://www.nupi.ml" # the base hostname & protocol for your site
+blogurl: "http://blog.nupi.ml"
 
 # Build settings
 markdown: kramdown
