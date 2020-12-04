@@ -3,7 +3,7 @@ title: NUP
 email: info@nupi.tk
 description: NUP International, una vez más a los ponchazos en internet.
 baseurl: "" # the subpath of your site, e.g. /blog/ NOTA: No agregar barra al final.
-url: "http://www.nupi.tk" # the base hostname & protocol for your site
+url: "http://www.nupi.ml" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
